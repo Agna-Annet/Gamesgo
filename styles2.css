@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.cell.X {
+    background-color: #5f5fe2; 
+}
+.cell.O {
+    background-color: #e83838; 
+}
+#message {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    visibility: hidden;
+}
+#restart {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+body.blue-turn {
+    background-color: #689cd3; 
+}
+body.red-turn {
+    background-color: #ef7272; 
+}
+.winner-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid #000;
+    animation: celebrate 1s infinite;
+}
+@keyframes celebrate {
+    0% { transform: translate(-50%, -50%) scale(1); }
+    50% { transform: translate(-50%, -50%) scale(1.1); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}

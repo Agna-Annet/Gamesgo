@@ -1,0 +1,56 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #333, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Game Selection Container */
+.game-selection {
+    display: flex;
+    gap: 20px;
+}
+
+/* Game Tabs */
+.game-tab {
+    background: grey;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.game-tab:hover {
+    transform: scale(1.05);
+}
+
+/* Game Images */
+.game-tab img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Game Names */
+.game-name {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}

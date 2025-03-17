@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamesGo</title>
+    <link rel="stylesheet" href="gamesstyle.css">
+</head>
+<body>
+    <main class="game-selection">
+        <div id="tictactoe" class="game-tab" onclick="window.location.href='index.html';" style="cursor: pointer;">
+            <img src="https://img.freepik.com/premium-vector/tic-tac-toe-vector-illustration_454371-191.jpg?semt=ais_hybrid" alt="Tic Tac Toe">
+            <span class="game-name">Tic Tac Toe</span>
+        </div>
+            
+        <script>
+            document.getElementById("tictactoe").addEventListener("click", function() {
+                window.location.href = "index.html";
+            });
+        </script>
+        
+        <div id="4inarow" class="game-tab" onclick="window.location.href='href.html';" style="cursor: pointer;" class="game-tab">
+            <img src="https://www.shutterstock.com/image-photo/game-4-row-yellow-red-600nw-2233654429.jpg" alt="4 in a Row">
+            <span class="game-name">4 in a Row</span>
+        </div>
+
+        <script>
+            document.getElementById("4inarow").addEventListener("click", function() {
+                window.location.href = "html.html";
+            });
+        </script>
+        <div id="guessno" class="game-tab" onclick="window.location.href='index1.html';" style="cursor: pointer;" class="game-tab">
+            <img src="https://media.tenor.com/nLhzTTW9Xk8AAAAe/guessnumbergame.png" alt="Rock Paper Scissors">
+            <span class="game-name">Guess the number</span>
+        </div>
+
+        <script>
+            document.getElementById("guessno").addEventListener("click", function() {
+                window.location.href = "index1.html";
+            });
+        </script>
+    </main>
+</body>
+</html>
